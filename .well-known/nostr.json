@@ -2,10 +2,24 @@
   "names": {
     "iam": "854f40169d200d51e9108454074a53247f83076c68ec412c6fabac8a45043e1c",
     "21e6": "854f40169d200d51e9108454074a53247f83076c68ec412c6fabac8a45043e1c",
-    "first": "14b58af78f0d0d7e20ae31ddcfe7c3b4362033e9f530e62a66ee39438b2ad24d"
+    "first": "14b58af78f0d0d7e20ae31ddcfe7c3b4362033e9f530e62a66ee39438b2ad24d",
+    "pwd": "c7ae674bb903dd2e9906308d396a06cd60ae63c02beeabc47e01551a8e851206"
   },
   "relays": {
     "854f40169d200d51e9108454074a53247f83076c68ec412c6fabac8a45043e1c": [
+      "wss://brb.io",
+      "wss://eden.nostr.land",
+      "wss://global.relay.red",
+      "wss://nos.lol",
+      "wss://nostr.fmt.wiz.biz",
+      "wss://nostr.mikedilger.com",
+      "wss://nostrich.friendship.tw",
+      "wss://relay.austrich.net",
+      "wss://relay.current.fyi",
+      "wss://relay.damus.io",
+      "wss://relay.snort.social"
+    ],
+    "c7ae674bb903dd2e9906308d396a06cd60ae63c02beeabc47e01551a8e851206": [
       "wss://brb.io",
       "wss://eden.nostr.land",
       "wss://global.relay.red",
