@@ -1,0 +1,12 @@
+name: ntfy
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: robiningelbrecht/ntfy-action@v2.0.0
+        with:
+          url: https://ntfy.sh
+          topic: nostrich
+          icon: https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png
+          job_status: ${{ job.status }}
