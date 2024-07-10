@@ -1,5 +1,4 @@
-name: test
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: ntfy
 on: [push]
 jobs:
   check-bats-version:
