@@ -1,0 +1,5 @@
+- name: ntfy-notifications
+  uses: niniyas/ntfy-action@master
+  with:
+    url: 'https://ntfy.sh'
+    topic: 'nostrich'
