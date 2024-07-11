@@ -4,9 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: robiningelbrecht/ntfy-action@v2.0.0
+      - uses: niniyas/ntfy-action@master
         with:
           url: https://ntfy.sh
           topic: nostrich
-          icon: https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png
-          job_status: ${{ github.head_ref }}
