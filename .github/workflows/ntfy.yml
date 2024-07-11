@@ -9,4 +9,4 @@ jobs:
           url: https://ntfy.sh
           topic: nostrich
           icon: https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png
-          job_status: ${{ job.status }}
+          job_status: ${{ github.head_ref }}
