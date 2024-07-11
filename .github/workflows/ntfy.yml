@@ -8,4 +8,4 @@ jobs:
         with:
           url: https://ntfy.sh
           topic: nostrich
-          job_status: ${{ github.head_ref }}
+          job_status: ${{ job.status }}
