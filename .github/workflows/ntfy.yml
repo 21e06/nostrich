@@ -8,3 +8,4 @@ jobs:
         with:
           url: https://ntfy.sh
           topic: nostrich
+          details: test
