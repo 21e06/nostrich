@@ -4,8 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: niniyas/ntfy-action@master
+      - uses: robiningelbrecht/ntfy-action@v1.0.0
         with:
           url: https://ntfy.sh
           topic: nostrich
-          details: test
