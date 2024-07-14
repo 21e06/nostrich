@@ -9,4 +9,5 @@ jobs:
           url: 'https://ntfy.sh'
           tags: 'test'
           topic: 'test'
-          details: 'hello world'
+          actions: disabled
+          details: hello world
