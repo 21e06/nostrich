@@ -1,11 +1,12 @@
 name: ntfy
 on: [push]
 jobs:
-  check-bats-version:
+  test-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: robiningelbrecht/ntfy-action@v1.0.0
+      - name: ntfy-notifications
+        uses: niniyas/ntfy-action@master
         with:
-          url: https://ntfy.sh
-          topic: nostrich
-          job_status: ${{ job.status }}
+          url: 'https://ntfy.sh'
+          topic: 'test'
+          details: 'test notif'
