@@ -4,10 +4,9 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: blackshot/ntfy-action@master
+      - uses: niniyas/ntfy-action@master
         with:
           url: 'https://ntfy.sh'
-          tags: 'test'
           topic: 'test'
           actions: disabled
           details: hello world
