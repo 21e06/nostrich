@@ -4,9 +4,8 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
-      - name: ntfy-notifications
-        uses: niniyas/ntfy-action@master
+      - uses: niniyas/ntfy-action@master
         with:
           url: 'https://ntfy.sh'
           topic: 'test'
-          details: 'test notif'
+          details: 'hello world'
