@@ -7,5 +7,6 @@ jobs:
       - uses: blackshot/ntfy-action@master
         with:
           url: 'https://ntfy.sh'
+          tags: 'test'
           topic: 'test'
           details: 'hello world'
