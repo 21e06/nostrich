@@ -1,12 +1,9 @@
 name: ntfy
 on: [push]
 jobs:
-  test-job:
+  notify:
     runs-on: ubuntu-latest
     steps:
-      - uses: niniyas/ntfy-action@master
-        with:
-          url: 'https://ntfy.sh'
-          topic: 'test'
-          actions: disabled
-          details: hello world
+      - name: ntfy-push
+        run: curl ntfy.sh/test \
+          -d "test" #"Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status}}"
