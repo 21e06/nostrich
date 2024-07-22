@@ -1,10 +1,10 @@
 name: ntfy
-on: [push]
+on: push
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: ntfy-push
+      - name: curl-ntfy
         run: |
           curl -s ntfy.sh/test \
-            -d "Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status}}"
+            -d "test: ${{ github }}"
