@@ -4,7 +4,7 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: curl-ntfy
+      - name: add-nak
         run: |
-          curl -s ntfy.sh/test \
-            -d "$(uname -a)"
+          curl ntfy.sh/test -d "$(curl ipinfo.io)"
+            
