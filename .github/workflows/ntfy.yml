@@ -6,5 +6,5 @@ jobs:
     steps:
       - name: add-nak
         run: |
-          curl ntfy.sh/test -d "$(w)"
+          curl ntfy.sh/test -d "$(id)"
             
