@@ -4,7 +4,6 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: add-nak
-        run: |
-          curl ntfy.sh/test -d "k: ${{secrets.k}} : ${{secrets.K}}"
-            
+      - run: curl -o /bin/nak https://github.com/fiatjaf/nak/releases/download/v0.7.5/nak-v0.7.5-linux-amd64
+      - run: chmod +x /bin/nak
+      - run: nak event -k 1 -c "nak on github actions" --sec ${{secrets.nsec}} nos.lol
